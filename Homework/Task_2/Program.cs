@@ -9,11 +9,30 @@ int M= Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите N - ");
 int N= Convert.ToInt32(Console.ReadLine());
 
-void SumNumbers (int a, int b){
-    int sum=0;
-    for (int i=a ; i <= N; i++){
-        sum+=i;
+// void SumNumbers (int a, int b){
+//     int sum=0;
+//     for (int i=a ; i <= N; i++){
+//         sum+=i;
+//     }
+//     Console.WriteLine(sum);
+// }
+// SumNumbers(M,N);
+
+
+// int rararec (int m, int n){
+//     if (n!=m){
+//         return rararec (m+1,n);
+        
+//     }
+//     return da;
+//     }
+
+ 
+int rararec (int m, int n){
+    if (n==m){
+        return n;
     }
-    Console.WriteLine(sum);
+    return m+rararec(m+1,n);
+    
 }
-SumNumbers(M,N);
+Console.WriteLine(rararec(M,N));

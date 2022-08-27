@@ -16,6 +16,6 @@
                 return Accerman(n - 1, 1);
             if (n > 0 && m > 0) 
                 return Accerman(n - 1, Accerman(n, m - 1));
-            return Accerman(n,m);
+            return 1;
         }
         Console.WriteLine(Accerman(n,m));

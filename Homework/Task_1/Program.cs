@@ -14,4 +14,15 @@ void NaturalNumbersN (int num){
         Console.Write($"{i},");              
     }
 }
-NaturalNumbersN(N);
+//NaturalNumbersN(N);
+
+int raer (int n){
+        if (n!=0){
+        Console.Write(n);
+        return raer (n-1);
+    }
+    return n;
+    }
+
+
+raer(N);
